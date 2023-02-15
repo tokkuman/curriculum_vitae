@@ -1,0 +1,292 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+  
+\usepackage[explicit]{titlesec}
+\titleformat{\section}{\Large}{\thesection}{1zw}{\titleline[l]{}\titlerule}
+
+% Set your name here
+\def\name{Yuta Tokuoka}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{https://fun.bio.keio.ac.jp/\~tokuoka/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+\usepackage{url}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.unc.edu/}{Keio University} \\
+  Center for Biosciences and Informatics \\
+  3-14-1, Hiyoshi, Kohoku-ku \\
+  Yokohama-shi, Kanagawa, Japan, 223-8522
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+   Phone: & +81 90 2222 7014 \\
+   Email: & \href{mailto:bowbrand1227@gmail.com}{\tt bowbrand1227@gmail.com} \\
+   Homepage: & \href{https://fun.bio.keio.ac.jp/\~tokuoka/}{\tt \url{https://fun.bio.keio.ac.jp/\~tokuoka/}} \\
+   GitHub: & \href{https://github.com/tokkuman}{\tt \url{https://github.com/tokkuman}} \\
+  \end{tabular}
+\end{minipage}
+
+\vspace{0.6cm}
+
+% \section*{Personal}
+
+% He received the B.E. and M.E. degrees in Biosciences and Informatics
+% from Keio University, in 2016 and 2018, respectively. He joined the
+% School of Fundamental Science and Technology at Keio University in 2018,
+% where he is currently a Ph.D. candidate under the supervision of
+% Dr. Akira Funahashi. His research interests include computer vision,
+% machine learning, and developmental biology.
+
+
+\section*{\bf Education}
+\vspace{-0.6cm}
+\hrulefill
+% \vspace{-0.3cm}
+
+\begin{itemize}
+ \item {\bf Ph.D. Student}, Graduate School of Science and Technology, Keio University, 2018--Now.
+ \item {\bf Master of Engineering}, Biosciences and Informatics, Keio University, 2016--2018.
+ \item {\bf Bachelor of Engineering}, Biosciences and Informatics, Keio University, 2012--2016.
+       \\
+\end{itemize}
+
+
+\section*{\bf Professional Experience}
+\vspace{-0.6cm}
+\hrulefill
+
+\begin{itemize}
+ \item Mentor for Google Summer of Code 2020
+ \item Preferred Networks, Inc. Summer Intern and Part-time Engineer 2018--2019
+       \\
+       %An Inductive Transfer Learning Approach using Cycle-consistent
+       %Adversarial Domain Adaptation with Application to Brain Tumor
+       %Segmentation
+\end{itemize}
+
+
+\section*{\bf Publications and Preprints}
+\vspace{-0.6cm}
+\hrulefill
+\vspace{-0.3cm}
+
+\subsection*{\bf Journal Articles}
+
+\begin{itemize}
+ \item \underline{Yuta Tokuoka}, Takahiro G Yamada, Daisuke Mashiko,
+       Zenki Ikeda, Noriko F Hiroi, Tetsuya J Kobayashi, Kazuo Yamagata,
+       Akira Funahashi, ``3D convolutional neural networks-based
+       segmentation to acquire quantitative criteria of the nucleus
+       during mouse embryogenesis,'' {\itshape npj Systems Biology and
+       Applications}, 6.32, (2020)
+
+ \item Chikahiro Imashiro, \underline{Yuta Tokuoka}, Kaito Kikuhara,
+       Takahiro G Yamada, Kenjiro Takemura, Akira Funahashi, ``Direct
+       Cell Counting Using Macro-Scale Smartphone Images of Cell
+       Aggregate,'' {\itshape IEEE Access}, 8, pp.170033-170043, (2020)
+
+ \item Maya Ooka, \underline{Yuta Tokuoka}, Shori Nishimoto, Noriko
+       F. Hiroi, Takahiro G. Yamada, Akira Funahashi, ``Deep Learning
+       for Non-Invasive Determination of the Differentiation Status of
+       Human Neuronal Cells by Using Phase-Contrast Photomicrographs,''
+       {\itshape Applied Sciences} 9.24 (2019): 5503.
+
+ \item Shori Nishimoto, \underline{Yuta Tokuoka}, Takahiro G. Yamada,
+       Noriko F. Hiroi, Akira Funahashi, ``Predicting the future
+       direction of cell movement with convolutional neural networks,''
+       {\itshape PloS one} 14.9 (2019).
+\end{itemize}
+
+
+\subsection*{\bf Proceedings}
+
+\begin{itemize}
+ \item \underline{Yuta Tokuoka}, Shuji Suzuki, Yohei Sugawara,
+       ``An Inductive Transfer Learning Approach using Cycle-consistent Adversarial Domain Adaptation with Application to Brain Tumor Segmentation,''
+       {\itshape 2019 6th International Conference on Biomedical and Bioinformatics Engineering}, Accepted.
+\end{itemize}
+
+
+\subsection*{\bf Preprints}
+
+\begin{itemize}
+ \item \underline{Yuta Tokuoka}, Takahiro G. Yamada, Noriko F. Hiroi,
+       Tetsuya J. Kobayashi, Kazuo Yamagata, Akira Funahashi,
+       ``Convolutional Neural Network-Based Instance Segmentation Algorithm
+       to Acquire Quantitative Criteria of Early Mouse Development,''
+       {\itshape BioRxiv} (2018): 324186.
+ % \item Shori Nishimoto, \underline{Yuta Tokuoka}, Takahiro G Yamada, Noriko F Hiroi,
+ %       Akira Funahashi, ``Predicting the future direction of cell movement with
+ %       convolutional neural networks,'' {\itshape BioRxiv} (2018): 388033.
+\end{itemize}
+
+
+\subsection*{\bf Books}
+
+\begin{itemize}
+ \item 「数でとらえる細胞生物学」舟橋啓 監訳, 第4章担当
+\end{itemize}
+
+
+\subsection*{\bf Reviews}
+
+\begin{itemize}
+ \item 舟橋啓, \underline{徳岡雄大}, 大岡麻耶, 西本勝利, 山田貴大, 広井賀子,
+       「画像解析と深層学習を用いた診断の基礎」, 病理と臨床 37(7): 631-635, 2019.
+\end{itemize}
+
+
+
+\section*{\bf Report of Teaching and Training}
+\vspace{-0.6cm}
+\hrulefill
+
+\begin{itemize}
+ \item \underline{徳岡雄大}.「不妊治療に資する深層学習を用いた初期胚定量評価手法の開発」群馬大学数理データ科学教育研究センター主催第1回レギュラトリーサイエンスセミナー群馬, 2019年9月5日
+ \item 舟橋啓, \underline{徳岡雄大}.「新学術領域研究・学術研究支援基盤形成 「先端バイオイメージング支援プラットフォーム」AIによる生物画像解析トレーニングコース」機械学習による画像分類, 熊本, 2019年8月29日 \\ (https://github.com/funalab/ABiSTC)
+       \\
+\end{itemize}
+
+
+\section*{\bf Invited Presentations}
+\vspace{-0.6cm}
+\hrulefill
+
+\begin{itemize}
+ \item \underline{徳岡雄大}, 山田貴大, 広井賀子, 小林徹也, 山縣一夫, 舟橋啓.「不妊治療に資する深層学習を用いた初期胚定量評価手法の開発」, 第18回日本再生医療学会総会, 兵庫, 2019年3月23日
+ \item \underline{Yuta Tokuoka}, Noriko F. Hiroi, Tetsuya J. Kobayashi, Kazuo Yamagata, Akira Funahashi. ``Segmenting four-dimensional fluorescence microscopic image using Convolutional Neural Network,'' 18th International Conference on Systems Biology, Blacksburg, Virginia, USA, Aug, 2017
+       \\
+\end{itemize}
+
+
+\section*{\bf Software Developments}
+\vspace{-0.6cm}
+\hrulefill
+
+\begin{itemize}
+ \item {\bf Classification of Neuronal Differentiation (CoND)} \\
+       https://github.com/funalab/CoND
+ \item {\bf PredictMovingDirection} \\
+       https://github.com/funalab/PredictMovingDirection
+ \item {\bf Quantitative Criteria Acquisition Network (QCANet)} \\
+       https://github.com/funalab/QCANet
+ \item {\bf Grouping Neural Network} \\
+       https://github.com/tokkuman/GroupingNN
+       \\
+\end{itemize}
+
+
+\section*{\bf Honors and Fellowships}
+\vspace{-0.6cm}
+\hrulefill
+
+\begin{itemize}
+ \item JSPS Research Fellowship for Young Scientists (DC2), 2019
+ \item Amano Institute of Technology fellowship, 2018
+ \item GTC Japan 2017 Best poster award finalist, 2017
+       \\
+\end{itemize}
+
+
+\section*{\bf Technical and Personal Skills}
+\vspace{-0.6cm}
+\hrulefill
+\vspace{-0.3cm}
+
+\subsection*{\bf Coursework}
+Experimental/theoretical cell biology, developmental biology, machine
+learning, computer vision, statistics, nonlinear dynamics,
+ordinary/partial differential equations
+
+\subsection*{\bf Computing}
+Proficient: Python, C/C++, Git/GitHub/GitLab, Chainer, PyTorch \\
+Basic: Docker, Java, JavaScript, Tensorflow, Keras
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\url{\footerlink}}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
